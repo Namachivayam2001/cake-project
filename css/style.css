@@ -63,3 +63,26 @@ i{
 .text-div:hover{
     box-shadow: 6px 10px 7px rgba(255, 255, 255, 0.5);
 }
+header{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul li{
+    color: white;
+    display: inline-block;
+    margin: 0px 10px;
+    height: cover;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+header i{
+    font-size: 25px;
+}
+header i:hover{
+    cursor: pointer;
+}
