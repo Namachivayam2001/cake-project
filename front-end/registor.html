@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registor.css" type="text/css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form id="form" action="/submit" method="post">
+        <h1>Register</h1>
+        <input type="text" id="userid" class="field" placeholder="User ID">
+        <p id="uidError"></p>
+        <input type="text" id="fname" class="field" placeholder="First Name">
+        <p id="fnameError"></p>
+        <input type="text" id="lname" class="field" placeholder="Last Name">
+        <p id="lnameError"></p>
+        <div class="field" id="genderDiv">
+            <label>Gender:</label>
+            <div>
+                <input class="gender" type="radio" id="male" name="gender" value="male">
+                <label class="gender" for="male">Male</label>
+                <input class="gender" type="radio" id="female" name="gender" value="female">
+                <label class="gender" for="female">Female</label>
+                <input class="gender" type="radio" id="other" name="gender" value="other">
+                <label class="gender" for="other">Other</label>
+            </div>
+        </div>
+        <p id="genderError"></p>
+        <div class="field" id="dobDiv">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+        </div>
+        <p id="dobError"></p>
+        <input type="email" id="email" class="field" placeholder="Email Address">
+        <p id="emailError"></p>
+        <input type="number" id="phone" class="field" placeholder="Mobile Number">
+        <p id="phoneError"></p>
+        <input type="password" id="password" class="field" placeholder="Password">
+        <p id="passwordError"></p>
+        <input type="password" id="confirmPassword" class="field" placeholder="Confirm Password">
+        <p id="confirmError"></p>
+        <label class="field">
+            <input id="agree" type="checkbox" name="terms">
+            I agree to the <a href="#">Terms and Conditions</a>
+        </label>
+        <p id="agreeError"></p>
+        <button type="submit" class="field" id="submit">Submit</button>
+    </form>
+    <script src="./registor.js"></script>
+</body>
+</html>

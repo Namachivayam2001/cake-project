@@ -1,0 +1,15 @@
+{
+  "type": "commonjs",
+  "name": "cake-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node s2.mjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
+  }
+}
