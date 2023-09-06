@@ -23,8 +23,9 @@ const agree = document.getElementById("agree");
 const agreeError = document.getElementById("agreeError");
 
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    validate();
+    if(!validate()){
+        e.preventDefault();
+    }
 })
 
 const validate = () => {
@@ -38,7 +39,7 @@ const validate = () => {
                                 if(passValidate()){
                                     if(confirmValidate()){
                                         if(agreement()){
-                                            form.submit();
+                                            return true;
                                         }
                                     }
                                 }
@@ -49,6 +50,7 @@ const validate = () => {
             }
         }
     }
+    return false;
 }
 
 const uidValidate = () => {
