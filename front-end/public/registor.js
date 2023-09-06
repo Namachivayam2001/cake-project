@@ -69,6 +69,7 @@ const uidValidate = () => {
     } else{
         uidError.innerHTML = "";
         uid.style.borderColor = "green";
+        fname.focus();
         return true;
     }
 }
@@ -87,6 +88,7 @@ const fnameValidate = () => {
     } else{
         fnameError.innerHTML = "";
         fname.style.borderColor = "green";
+        lname.focus();
         return true;
     }
 }
@@ -105,6 +107,7 @@ const lnameValidate = () => {
     } else{
         lnameError.innerHTML = "";
         lname.style.borderColor = "green";
+        male.focus();
         return true;
     }
 }
@@ -115,6 +118,7 @@ const genderValidate = () => {
         return false;
     } else {
         genderError.innerHTML = "";
+        dob.focus();
         return true;
     }
 }
@@ -132,6 +136,7 @@ const dobValidate = () => {
         return false;
     } else {
         dobError.innerHTML = "";
+        email.focus();
         return true;
     }
 }
@@ -150,6 +155,7 @@ const emailValidate = () => {
     } else {
         emailError.innerHTML = "";
         email.style.borderColor = "green";
+        phone.focus();
         return true;
     }
 }
@@ -167,6 +173,7 @@ const phoneValidate = () => {
     } else{
         phoneError.innerHTML = "";
         phone.style.borderColor = "green";
+        pass.focus();
         return true;
     }
 }
@@ -184,6 +191,7 @@ const passValidate = () => {
     } else{
         passError.innerHTML = "";
         pass.style.borderColor = "green";
+        Confirm.focus();
         return true;
     }
 }
@@ -202,6 +210,7 @@ const confirmValidate = () => {
     } else{
         confirmError.innerHTML = "";
         Confirm.style.borderColor = "green";
+        agree.focus();
         return true;
     }
 }
