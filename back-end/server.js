@@ -22,8 +22,7 @@ db.connect( err => {
 })
 
 app.post('/submit', (req, res) => {
-  console.log(req.body)
-  const {userid, fname, lname, gender, dob, email, phone, password, confirmPassword, terms} = req.body;
+  const {userid, fname, lname, gender, dob, email, phone, password} = req.body;
   const insertQuery = `INSERT INTO registor_form (UserID, First_Name, Last_Name, Gender, DOB, Email, Mobile_Number, Password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
   db.query(insertQuery, [userid, fname, lname, gender, dob, email, phone, password], (err, result) => {
       if (err) {
