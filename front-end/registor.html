@@ -9,11 +9,11 @@
 <body>
     <form id="form" action="/submit" method="post">
         <h1>Register</h1>
-        <input type="text" id="userid" class="field" placeholder="User ID">
+        <input type="text" id="userid" name="userid" class="field" placeholder="User ID">
         <p id="uidError"></p>
-        <input type="text" id="fname" class="field" placeholder="First Name">
+        <input type="text" id="fname" name="fname" class="field" placeholder="First Name">
         <p id="fnameError"></p>
-        <input type="text" id="lname" class="field" placeholder="Last Name">
+        <input type="text" id="lname" name="lname" class="field" placeholder="Last Name">
         <p id="lnameError"></p>
         <div class="field" id="genderDiv">
             <label>Gender:</label>
@@ -29,16 +29,16 @@
         <p id="genderError"></p>
         <div class="field" id="dobDiv">
             <label for="dob">Date of Birth</label>
-            <input type="date" id="dob">
+            <input type="date" id="dob" name="dob">
         </div>
         <p id="dobError"></p>
-        <input type="email" id="email" class="field" placeholder="Email Address">
+        <input type="email" id="email" name="email" class="field" placeholder="Email Address">
         <p id="emailError"></p>
-        <input type="number" id="phone" class="field" placeholder="Mobile Number">
+        <input type="number" id="phone" name="phone" class="field" placeholder="Mobile Number">
         <p id="phoneError"></p>
-        <input type="password" id="password" class="field" placeholder="Password">
+        <input type="password" id="password" name="password" class="field" placeholder="Password">
         <p id="passwordError"></p>
-        <input type="password" id="confirmPassword" class="field" placeholder="Confirm Password">
+        <input type="password" id="confirmPassword" name="confirmPassword" class="field" placeholder="Confirm Password">
         <p id="confirmError"></p>
         <label class="field">
             <input id="agree" type="checkbox" name="terms">
